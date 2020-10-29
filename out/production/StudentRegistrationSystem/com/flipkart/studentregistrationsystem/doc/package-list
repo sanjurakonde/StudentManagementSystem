@@ -1,0 +1,7 @@
+com.flipkart.studentregistrationsystem.app
+com.flipkart.studentregistrationsystem.bean
+com.flipkart.studentregistrationsystem.constant
+com.flipkart.studentregistrationsystem.dao
+com.flipkart.studentregistrationsystem.exceptions
+com.flipkart.studentregistrationsystem.service
+com.flipkart.studentregistrationsystem.utils
