@@ -10,8 +10,14 @@ import org.apache.log4j.Logger;
 import java.sql.*;
 import java.util.ArrayList;
 
+/**
+ * The type Admin dao.
+ */
 public class AdminDAOImpl implements AdminDAO {
     private static Logger logger = Logger.getLogger(AdminDAOImpl.class);
+    /**
+     * The Connection.
+     */
     Connection connection = DBUtils.getConnection();
 
     /*

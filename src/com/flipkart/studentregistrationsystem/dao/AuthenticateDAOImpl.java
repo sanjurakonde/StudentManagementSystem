@@ -13,8 +13,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * The type Authenticate dao.
+ */
 public class AuthenticateDAOImpl implements AuthenticateDAO {
     private static Logger logger = Logger.getLogger(AuthenticateDAOImpl.class);
+    /**
+     * The Connection.
+     */
     Connection connection = DBUtils.getConnection();
 
     @Override
@@ -140,7 +146,16 @@ public class AuthenticateDAOImpl implements AuthenticateDAO {
         }
     }
 
-    /*
+    /**
+     * Register user boolean.
+     *
+     * @param userId   the user id
+     * @param username the username
+     * @param role     the role
+     * @param password the password
+     * @return the boolean
+     */
+/*
      Register a user
      */
     public boolean registerUser(int userId, String username, String role, String password) {
@@ -168,7 +183,13 @@ public class AuthenticateDAOImpl implements AuthenticateDAO {
         return false;
     }
 
-    /*
+    /**
+     * Gets role id based on given role.
+     *
+     * @param role the role
+     * @return the role id based on given role
+     */
+/*
      Get role id based on selected role
      */
     int getRoleIdBasedOnGivenRole(String role) {

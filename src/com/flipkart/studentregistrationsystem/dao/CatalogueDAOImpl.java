@@ -12,8 +12,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ * The type Catalogue dao.
+ */
 public class CatalogueDAOImpl implements CatalogueDAO {
     private static Logger logger = Logger.getLogger(CatalogueDAOImpl.class);
+    /**
+     * The Connection.
+     */
     Connection connection = DBUtils.getConnection();
 
     /*

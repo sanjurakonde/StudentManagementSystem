@@ -17,9 +17,18 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The type Student dao.
+ */
 public class StudentDAOImpl implements StudentDAO {
     private static Logger logger = Logger.getLogger(StudentDAOImpl.class);
+    /**
+     * The Connection.
+     */
     Connection connection = DBUtils.getConnection();
+    /**
+     * The Catalogue dao.
+     */
     CatalogueDAO catalogueDAO = new CatalogueDAOImpl();
 
     /*
@@ -85,6 +94,13 @@ public class StudentDAOImpl implements StudentDAO {
         }
     }
 
+    /**
+     * Check registered courses boolean.
+     *
+     * @param student  the student
+     * @param courseId the course id
+     * @return the boolean
+     */
     public boolean checkRegisteredCourses(Student student, int courseId) {
         PreparedStatement stmt = null;
         int count = 0;
