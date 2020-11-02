@@ -8,7 +8,13 @@ import org.apache.log4j.Logger;
 
 import java.util.List;
 
+/**
+ * The type Professor service.
+ */
 public class ProfessorServiceImpl implements ProfessorService {
+    /**
+     * The Professor dao.
+     */
     ProfessorDAO professorDAO = new ProfessorDAOImpl();
     private static Logger logger = Logger.getLogger(ProfessorServiceImpl.class);
 

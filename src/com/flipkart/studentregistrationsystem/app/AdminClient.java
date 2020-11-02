@@ -16,7 +16,9 @@ public class AdminClient {
     CourseService courseService = new CourseServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    // Display menu for the admin
+    /*
+     Display menu for the admin
+     */
     public void displayMenu() {
 
         int choice;
@@ -55,7 +57,9 @@ public class AdminClient {
         scanner.close();
     }
 
-    // Show available choices
+    /*
+     Show available choices
+     */
     void showChoices() {
         logger.info("Enter your choice:");
         logger.info("1. To view courses in catalog");
@@ -68,7 +72,9 @@ public class AdminClient {
         logger.info("0. To logout");
     }
 
-    // Gather required inputs to assign a course with a professor
+    /*
+     Gather required inputs to assign a course with a professor
+     */
     void assignProfessor() {
 
         logger.info("Enter professor Id");
@@ -81,7 +87,9 @@ public class AdminClient {
         adminService.assignProfessor(professor, courseId);
     }
 
-    // Gather required inputs to add new courses
+    /*
+     Gather required inputs to add new courses
+     */
     void addNewCourse() {
 
         Course course = new Course();
@@ -104,7 +112,9 @@ public class AdminClient {
         adminService.addCourse(course);
     }
 
-    // Gather course id to delete a course
+    /*
+     Gather course id to delete a course
+     */
     void deleteCourse() {
         logger.info("Enter course Id");
         Course course = new Course();
@@ -114,7 +124,9 @@ public class AdminClient {
         adminService.deleteCourse(course);
     }
 
-    // Gather required inputs to add a new user
+    /*
+     Gather required inputs to add a new user
+     */
     void registerNewUser() {
 
         logger.info("Enter 1 to add a new admin");
@@ -186,6 +198,9 @@ public class AdminClient {
         }
     }
 
+    /*
+    deletes the user
+     */
     void deleteUser() {
         logger.info("Enter user id:");
         AdminService adminService = new AdminServiceImpl();

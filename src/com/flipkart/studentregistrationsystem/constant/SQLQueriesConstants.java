@@ -11,13 +11,13 @@ public class SQLQueriesConstants {
 
     // Student Queries
     public final static String REGISTER_STUDENT_QUERY = "insert into Student(studentName, hasScholarship, gender, semester) values (?,?,?,?)";
-    public final static String ADD_COURSE_STUDENT_QUERY = "insert into RegisteredCourses(studentId, courseId, courseType, registeredDate) values(?,?,?,?)";
-    public final static String GET_REGISTERED_COURSES_QUERY = "select studentId, courseId, courseType, registeredDate from RegisteredCourses where studentId = ?";
+    public final static String ADD_COURSE_STUDENT_QUERY = "insert into RegisteredCourses(studentId, courseId, courseType) values(?,?,?)";
+    public final static String GET_REGISTERED_COURSES_QUERY = "select studentId, courseId, courseType from RegisteredCourses where studentId = ?";
     public final static String DROP_COURSE_STUDENT_QUERY = "delete from RegisteredCourses where courseId = ? and studentId = ?";
     public final static String COUNT_REGISTERED_COURSES_QUERY = "select count(*) from RegisteredCourses where studentId = ?";
     public final static String VIEW_GRADES_QUERY = "select c.courseId, c.courseName, rc.grade from Course c join RegisteredCourses rc on rc.courseId = c.courseId where rc.studentId = ?";
     public final static String CALCULATE_TOTAL_FEE = "select sum(c.fees) from RegisteredCourses rc join Course c on c.courseId = rc.courseId where rc.studentId = ?";
-    public final static String MAKE_PAYMENT_QUERY = "insert into Payment(studentId, feesPaid, paymentMethodId, paymentDate) values(?, ?, ?, ?)";
+    public final static String MAKE_PAYMENT_QUERY = "insert into Payment(studentId, feesPaid, paymentMethodId) values(?, ?, ?)";
     public final static String UPDATE_AFTER_PAYMENT = "update Student set isRegistered = 1 where studentId = ?";
     public final static String CHECK_IF_REGISTERED_TO_COURSE_QUERY = "select count(*) from RegisteredCourses where studentId = ? and courseId = ?";
     public final static String GET_STUDENT_DETAILS_QUERY = "select studentId, studentName, hasScholarship, gender from Student where studentName = ?";

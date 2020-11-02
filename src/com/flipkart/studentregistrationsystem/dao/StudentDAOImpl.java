@@ -31,8 +31,8 @@ public class StudentDAOImpl implements StudentDAO {
      */
     CatalogueDAO catalogueDAO = new CatalogueDAOImpl();
 
-    /*
-    returns a list of courses registered by a student
+    /**
+     * returns a list of courses registered by a student
      */
     @Override
     public ArrayList<Course> viewRegisteredCourses(Student student) {
@@ -77,8 +77,8 @@ public class StudentDAOImpl implements StudentDAO {
                 stmt.setInt(1,student.getStudentId());
                 stmt.setInt(2, courseId);
                 stmt.setString(3, "regular");
-                LocalDateTime dateTime = LocalDateTime.now();
-                stmt.setObject(4, dateTime);
+                //LocalDateTime dateTime = LocalDateTime.now();
+                //stmt.setObject(4, dateTime);
                 int rows = stmt.executeUpdate();
                 if(rows > 0) {
                     logger.info("Added course sucessfully");
@@ -95,7 +95,7 @@ public class StudentDAOImpl implements StudentDAO {
     }
 
     /**
-     * Check registered courses boolean.
+     * Check if registered courses boolean.
      *
      * @param student  the student
      * @param courseId the course id
@@ -122,8 +122,8 @@ public class StudentDAOImpl implements StudentDAO {
 
     }
 
-    /*
-    drop a course from registered courses
+    /**
+     * drop a course from registered courses
      */
     @Override
     public void dropCourse(int courseId, int studentId) throws CourseNotFoundException {
@@ -146,8 +146,8 @@ public class StudentDAOImpl implements StudentDAO {
         }
     }
 
-    /*
-    returns number of registered courses
+    /**
+     * returns number of registered courses
      */
     @Override
     public int numberOfRegisteredCourse(Student student) {
@@ -169,8 +169,8 @@ public class StudentDAOImpl implements StudentDAO {
         return count;
     }
 
-    /*
-    returns grades of the student
+    /**
+     * returns grades of the student
      */
     @Override
     public Map<String, String> viewGrades(Student student) {
@@ -192,8 +192,8 @@ public class StudentDAOImpl implements StudentDAO {
         return reports;
     }
 
-    /*
-    calculate the total fee of a student
+    /**
+     * calculate the total fee of a student
      */
     @Override
     public int calculateTotalFee(Student student) {
@@ -215,8 +215,8 @@ public class StudentDAOImpl implements StudentDAO {
         return totalFees;
     }
 
-    /*
-    make a payment in a choosen payment mode
+    /**
+     * make a payment in a choosen payment mode
      */
     @Override
     public String makePayment(Student student, int paymentMethod, int fees) {
@@ -226,8 +226,8 @@ public class StudentDAOImpl implements StudentDAO {
             stmt.setInt(1, student.getStudentId());
             stmt.setInt(2, fees);
             stmt.setInt(3, paymentMethod);
-            LocalDateTime dateTime = LocalDateTime.now();
-            stmt.setObject(4, dateTime);
+            //LocalDateTime dateTime = LocalDateTime.now();
+            //stmt.setObject(4, dateTime);
             int rows = stmt.executeUpdate();
             if(rows > 0) {
                 PreparedStatement stmt1 = null;

@@ -11,8 +11,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * The type Admin service.
+ */
 public class AdminServiceImpl implements AdminService {
     private static Logger logger = Logger.getLogger(AdminServiceImpl.class);
+    /**
+     * The Admin dao.
+     */
     AdminDAO adminDAO = new AdminDAOImpl();
 
     @Override
@@ -81,6 +87,12 @@ public class AdminServiceImpl implements AdminService {
         }
     }
 
+    /**
+     * Print users based on role.
+     *
+     * @param userList the user list
+     * @param role     the role
+     */
     public void printUsersBasedOnRole(List<User> userList, String role) {
         userList.stream().filter(user -> user.getRole().equals(role))
                 .collect(Collectors.toList())

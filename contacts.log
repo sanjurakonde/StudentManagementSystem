@@ -1484,3 +1484,443 @@
 14:50:29,003  INFO StudentClient,main:113 - Enter 1 to pay with credit card.
 14:50:29,003  INFO StudentClient,main:114 - Enter 2 to pay with debit card.
 14:50:29,004  INFO StudentClient,main:115 - Enter 3 to pay as cash.
+23:40:01,486  INFO SMSApp,main:22 - *** Welcome to Student Management System ***
+23:40:01,488  INFO SMSApp,main:39 - Enter 1 to login
+23:40:01,488  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:40:01,488  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:40:01,488  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:40:01,489  INFO SMSApp,main:43 - Enter any other number to exit 
+23:40:10,547  INFO SMSApp,main:22 - *** Welcome to Student Management System ***
+23:40:10,549  INFO SMSApp,main:39 - Enter 1 to login
+23:40:10,550  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:40:10,550  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:40:10,550  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:40:10,550  INFO SMSApp,main:43 - Enter any other number to exit 
+23:40:13,419  INFO SMSApp,main:156 - Enter username
+23:40:15,932  INFO SMSApp,main:158 - Enter password
+23:40:16,541  INFO SMSApp,main:160 - Select Role: Enter 1 for Student, 2 for Professor, 3 for Admin: 
+23:40:18,769  INFO SMSApp,main:170 - Successfully logged in as Student
+23:40:18,778 ERROR StudentDAOImpl,main:280 - null not found
+23:40:18,778  INFO StudentClient,main:72 - Enter your choice:
+23:40:18,778  INFO StudentClient,main:73 - 1. To view available courses
+23:40:18,778  INFO StudentClient,main:74 - 2. To choose a course
+23:40:18,779  INFO StudentClient,main:75 - 3. To drop a course
+23:40:18,779  INFO StudentClient,main:76 - 4. View registered courses
+23:40:18,779  INFO StudentClient,main:77 - 5. Pay fees
+23:40:18,779  INFO StudentClient,main:78 - 6. View grades
+23:40:18,779  INFO StudentClient,main:79 - 0. To logout
+23:40:24,749 DEBUG CourseServiceImpl,main:27 - Course Id	Course Name	Fees	Course Description
+23:40:24,795  INFO CourseServiceImpl,main:29 - 1		DBMS 		3000	Database Management
+23:40:24,795  INFO CourseServiceImpl,main:29 - 2		OS 		10000	Internals of OS
+23:40:24,795  INFO StudentClient,main:72 - Enter your choice:
+23:40:24,795  INFO StudentClient,main:73 - 1. To view available courses
+23:40:24,795  INFO StudentClient,main:74 - 2. To choose a course
+23:40:24,795  INFO StudentClient,main:75 - 3. To drop a course
+23:40:24,796  INFO StudentClient,main:76 - 4. View registered courses
+23:40:24,796  INFO StudentClient,main:77 - 5. Pay fees
+23:40:24,796  INFO StudentClient,main:78 - 6. View grades
+23:40:24,796  INFO StudentClient,main:79 - 0. To logout
+23:40:29,745  INFO StudentClient,main:90 - Enter courseId
+23:40:31,785  INFO StudentDAOImpl,main:84 - Added course sucessfully
+23:40:31,785  INFO StudentClient,main:72 - Enter your choice:
+23:40:31,785  INFO StudentClient,main:73 - 1. To view available courses
+23:40:31,785  INFO StudentClient,main:74 - 2. To choose a course
+23:40:31,786  INFO StudentClient,main:75 - 3. To drop a course
+23:40:31,786  INFO StudentClient,main:76 - 4. View registered courses
+23:40:31,786  INFO StudentClient,main:77 - 5. Pay fees
+23:40:31,786  INFO StudentClient,main:78 - 6. View grades
+23:40:31,786  INFO StudentClient,main:79 - 0. To logout
+23:40:37,288  INFO StudentServiceImpl,main:28 - Course Id	Course Name
+23:40:37,289  INFO StudentServiceImpl,main:29 - 1		 DBMS
+23:40:37,289  INFO StudentClient,main:72 - Enter your choice:
+23:40:37,289  INFO StudentClient,main:73 - 1. To view available courses
+23:40:37,289  INFO StudentClient,main:74 - 2. To choose a course
+23:40:37,290  INFO StudentClient,main:75 - 3. To drop a course
+23:40:37,290  INFO StudentClient,main:76 - 4. View registered courses
+23:40:37,290  INFO StudentClient,main:77 - 5. Pay fees
+23:40:37,290  INFO StudentClient,main:78 - 6. View grades
+23:40:37,290  INFO StudentClient,main:79 - 0. To logout
+23:40:43,687  INFO StudentClient,main:123 - Want to continue to pay Rs.3000 press 'y' to continue...
+23:40:47,626  INFO StudentClient,main:125 - Enter 1 to pay with credit card.
+23:40:47,626  INFO StudentClient,main:126 - Enter 2 to pay with debit card.
+23:40:47,626  INFO StudentClient,main:127 - Enter 3 to pay as cash.
+23:40:50,732  INFO StudentServiceImpl,main:77 - Payment Failed
+23:40:50,732  INFO StudentClient,main:72 - Enter your choice:
+23:40:50,732  INFO StudentClient,main:73 - 1. To view available courses
+23:40:50,732  INFO StudentClient,main:74 - 2. To choose a course
+23:40:50,732  INFO StudentClient,main:75 - 3. To drop a course
+23:40:50,733  INFO StudentClient,main:76 - 4. View registered courses
+23:40:50,733  INFO StudentClient,main:77 - 5. Pay fees
+23:40:50,733  INFO StudentClient,main:78 - 6. View grades
+23:40:50,733  INFO StudentClient,main:79 - 0. To logout
+23:40:54,083  INFO StudentClient,main:112 - --------Report Card--------
+23:40:54,083  INFO StudentClient,main:113 - Course	Grade
+23:40:54,093 ERROR StudentDAOImpl,main:188 - Unknown column 'rc.grade' in 'field list'
+23:40:54,093  INFO StudentClient,main:115 - ---------------------------
+23:40:54,093  INFO StudentClient,main:72 - Enter your choice:
+23:40:54,094  INFO StudentClient,main:73 - 1. To view available courses
+23:40:54,094  INFO StudentClient,main:74 - 2. To choose a course
+23:40:54,094  INFO StudentClient,main:75 - 3. To drop a course
+23:40:54,094  INFO StudentClient,main:76 - 4. View registered courses
+23:40:54,094  INFO StudentClient,main:77 - 5. Pay fees
+23:40:54,094  INFO StudentClient,main:78 - 6. View grades
+23:40:54,094  INFO StudentClient,main:79 - 0. To logout
+23:47:28,757  INFO StudentClient,main:112 - --------Report Card--------
+23:47:28,757  INFO StudentClient,main:113 - Course	Grade
+23:47:28,760  INFO StudentServiceImpl,main:64 - DBMS	null
+23:47:28,760  INFO StudentClient,main:115 - ---------------------------
+23:47:28,760  INFO StudentClient,main:72 - Enter your choice:
+23:47:28,761  INFO StudentClient,main:73 - 1. To view available courses
+23:47:28,761  INFO StudentClient,main:74 - 2. To choose a course
+23:47:28,761  INFO StudentClient,main:75 - 3. To drop a course
+23:47:28,761  INFO StudentClient,main:76 - 4. View registered courses
+23:47:28,761  INFO StudentClient,main:77 - 5. Pay fees
+23:47:28,761  INFO StudentClient,main:78 - 6. View grades
+23:47:28,761  INFO StudentClient,main:79 - 0. To logout
+23:47:36,192  INFO StudentClient,main:102 - Enter course id:
+23:47:37,705  INFO StudentDAOImpl,main:138 - Id0
+23:47:37,706  INFO StudentDAOImpl,main:140 - Rows deleted 1
+23:47:37,706  INFO StudentClient,main:72 - Enter your choice:
+23:47:37,706  INFO StudentClient,main:73 - 1. To view available courses
+23:47:37,707  INFO StudentClient,main:74 - 2. To choose a course
+23:47:37,707  INFO StudentClient,main:75 - 3. To drop a course
+23:47:37,707  INFO StudentClient,main:76 - 4. View registered courses
+23:47:37,707  INFO StudentClient,main:77 - 5. Pay fees
+23:47:37,707  INFO StudentClient,main:78 - 6. View grades
+23:47:37,707  INFO StudentClient,main:79 - 0. To logout
+23:47:44,764  INFO StudentServiceImpl,main:25 - No registered courses
+23:47:44,764  INFO StudentClient,main:72 - Enter your choice:
+23:47:44,765  INFO StudentClient,main:73 - 1. To view available courses
+23:47:44,765  INFO StudentClient,main:74 - 2. To choose a course
+23:47:44,765  INFO StudentClient,main:75 - 3. To drop a course
+23:47:44,765  INFO StudentClient,main:76 - 4. View registered courses
+23:47:44,765  INFO StudentClient,main:77 - 5. Pay fees
+23:47:44,765  INFO StudentClient,main:78 - 6. View grades
+23:47:44,765  INFO StudentClient,main:79 - 0. To logout
+23:47:48,842  INFO SMSApp,main:39 - Enter 1 to login
+23:47:48,842  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:47:48,842  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:47:48,842  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:47:48,843  INFO SMSApp,main:43 - Enter any other number to exit 
+23:47:48,843 ERROR SMSApp,main:205 - For input string: ""
+23:47:48,843  INFO SMSApp,main:39 - Enter 1 to login
+23:47:48,843  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:47:48,843  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:47:48,843  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:47:48,843  INFO SMSApp,main:43 - Enter any other number to exit 
+23:47:55,340  INFO SMSApp,main:156 - Enter username
+23:47:56,992  INFO SMSApp,main:158 - Enter password
+23:47:57,638  INFO SMSApp,main:160 - Select Role: Enter 1 for Student, 2 for Professor, 3 for Admin: 
+23:48:00,879  INFO SMSApp,main:182 - Successfully logged in as Professor
+23:48:00,884 ERROR ProfessorDAOImpl,main:128 - 
+23:48:00,884  INFO ProfessorClient,main:25 - Enter your choice:
+23:48:00,884  INFO ProfessorClient,main:26 - 1. To view available courses
+23:48:00,884  INFO ProfessorClient,main:27 - 2. To view courses taught
+23:48:00,884  INFO ProfessorClient,main:28 - 3. To view students in a course
+23:48:00,884  INFO ProfessorClient,main:29 - 4. Grade a student
+23:48:00,884  INFO ProfessorClient,main:30 - 0. To logout
+23:48:03,289 DEBUG CourseServiceImpl,main:27 - Course Id	Course Name	Fees	Course Description
+23:48:03,290  INFO CourseServiceImpl,main:29 - 1		DBMS 		3000	Database Management
+23:48:03,290  INFO CourseServiceImpl,main:29 - 2		OS 		10000	Internals of OS
+23:48:03,290  INFO ProfessorClient,main:25 - Enter your choice:
+23:48:03,290  INFO ProfessorClient,main:26 - 1. To view available courses
+23:48:03,290  INFO ProfessorClient,main:27 - 2. To view courses taught
+23:48:03,290  INFO ProfessorClient,main:28 - 3. To view students in a course
+23:48:03,291  INFO ProfessorClient,main:29 - 4. Grade a student
+23:48:03,291  INFO ProfessorClient,main:30 - 0. To logout
+23:48:06,401  INFO ProfessorServiceImpl,main:28 - --------------Course List--------------
+23:48:06,402  INFO ProfessorServiceImpl,main:29 - Course Id	Course Name		Course Description
+23:48:06,405  INFO ProfessorServiceImpl,main:34 - ----------------------------------------
+23:48:06,405  INFO ProfessorClient,main:25 - Enter your choice:
+23:48:06,405  INFO ProfessorClient,main:26 - 1. To view available courses
+23:48:06,405  INFO ProfessorClient,main:27 - 2. To view courses taught
+23:48:06,405  INFO ProfessorClient,main:28 - 3. To view students in a course
+23:48:06,405  INFO ProfessorClient,main:29 - 4. Grade a student
+23:48:06,405  INFO ProfessorClient,main:30 - 0. To logout
+23:48:16,414  INFO ProfessorDAOImpl,main:41 - --------------Student List--------------
+23:48:16,414  INFO ProfessorDAOImpl,main:42 - Course Id 	 Student Id	Student Name	gender	Semester
+23:48:16,415  INFO ProfessorDAOImpl,main:46 - ----------------------------------------
+23:48:16,415  INFO ProfessorClient,main:25 - Enter your choice:
+23:48:16,415  INFO ProfessorClient,main:26 - 1. To view available courses
+23:48:16,415  INFO ProfessorClient,main:27 - 2. To view courses taught
+23:48:16,415  INFO ProfessorClient,main:28 - 3. To view students in a course
+23:48:16,415  INFO ProfessorClient,main:29 - 4. Grade a student
+23:48:16,415  INFO ProfessorClient,main:30 - 0. To logout
+23:48:19,958  INFO ProfessorClient,main:45 - Enter course Id: 
+23:48:23,135  INFO ProfessorClient,main:48 - Enter student Id: 
+23:48:24,831  INFO ProfessorClient,main:50 - Enter grades:
+23:48:28,152  INFO ProfessorDAOImpl,main:98 - Couldn't upload try again
+23:48:28,152  INFO ProfessorClient,main:25 - Enter your choice:
+23:48:28,152  INFO ProfessorClient,main:26 - 1. To view available courses
+23:48:28,152  INFO ProfessorClient,main:27 - 2. To view courses taught
+23:48:28,152  INFO ProfessorClient,main:28 - 3. To view students in a course
+23:48:28,153  INFO ProfessorClient,main:29 - 4. Grade a student
+23:48:28,153  INFO ProfessorClient,main:30 - 0. To logout
+23:48:33,600  INFO SMSApp,main:39 - Enter 1 to login
+23:48:33,600  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:48:33,600  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:48:33,600  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:48:33,600  INFO SMSApp,main:43 - Enter any other number to exit 
+23:48:33,601 ERROR SMSApp,main:205 - For input string: ""
+23:48:33,601  INFO SMSApp,main:39 - Enter 1 to login
+23:48:33,601  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:48:33,601  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:48:33,601  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:48:33,601  INFO SMSApp,main:43 - Enter any other number to exit 
+23:48:42,525 ERROR SMSApp,main:80 - --------------------Exiting--------------------
+23:48:42,525  INFO SMSApp,main:28 - **See you later, Bye**
+11:03:24,153  INFO SMSApp,main:22 - *** Welcome to Student Management System ***
+11:03:24,156  INFO SMSApp,main:39 - Enter 1 to login
+11:03:24,157  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:03:24,157  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:03:24,157  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:03:24,157  INFO SMSApp,main:43 - Enter any other number to exit 
+11:29:47,322  INFO SMSApp,main:22 - *** Welcome to Student Management System ***
+11:29:47,325  INFO SMSApp,main:39 - Enter 1 to login
+11:29:47,325  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:29:47,325  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:29:47,326  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:29:47,326  INFO SMSApp,main:43 - Enter any other number to exit 
+11:29:50,825  INFO SMSApp,main:156 - Enter username
+11:29:53,748  INFO SMSApp,main:158 - Enter password
+11:29:55,454  INFO SMSApp,main:160 - Select Role: Enter 1 for Student, 2 for Professor, 3 for Admin: 
+11:29:58,428 ERROR SMSApp,main:174 - Login failed!!, please try again
+11:29:58,428  INFO SMSApp,main:176 - Successfully logged in as Student
+11:29:58,446 ERROR StudentDAOImpl,main:278 - Invalid value for getInt() - 'F'
+11:29:58,446  INFO StudentClient,main:72 - Enter your choice:
+11:29:58,446  INFO StudentClient,main:73 - 1. To view available courses
+11:29:58,447  INFO StudentClient,main:74 - 2. To choose a course
+11:29:58,447  INFO StudentClient,main:75 - 3. To drop a course
+11:29:58,447  INFO StudentClient,main:76 - 4. View registered courses
+11:29:58,447  INFO StudentClient,main:77 - 5. Pay fees
+11:29:58,447  INFO StudentClient,main:78 - 6. View grades
+11:29:58,447  INFO StudentClient,main:79 - 0. To logout
+11:30:31,637  INFO SMSApp,main:39 - Enter 1 to login
+11:30:31,638  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:30:31,638  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:30:31,638  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:30:31,638  INFO SMSApp,main:43 - Enter any other number to exit 
+11:30:31,639 ERROR SMSApp,main:223 - For input string: ""
+11:30:31,639  INFO SMSApp,main:39 - Enter 1 to login
+11:30:31,639  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:30:31,639  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:30:31,639  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:30:31,640  INFO SMSApp,main:43 - Enter any other number to exit 
+11:30:34,371  INFO SMSApp,main:156 - Enter username
+11:30:53,346  INFO SMSApp,main:158 - Enter password
+11:30:54,440  INFO SMSApp,main:160 - Select Role: Enter 1 for Student, 2 for Professor, 3 for Admin: 
+11:30:57,267 ERROR SMSApp,main:210 - Login failed!!, please try again
+11:30:57,267  INFO SMSApp,main:212 - Successfully logged in as Admin
+11:30:57,272  INFO AdminClient,main:64 - Enter your choice:
+11:30:57,273  INFO AdminClient,main:65 - 1. To view courses in catalog
+11:30:57,273  INFO AdminClient,main:66 - 2. To view users
+11:30:57,273  INFO AdminClient,main:67 - 3. Assign course to a professor
+11:30:57,273  INFO AdminClient,main:68 - 4. Register a new user
+11:30:57,273  INFO AdminClient,main:69 - 5. Delete a user
+11:30:57,273  INFO AdminClient,main:70 - 6. Add a new course to catalog
+11:30:57,273  INFO AdminClient,main:71 - 7. Drop a course from catalog
+11:30:57,273  INFO AdminClient,main:72 - 0. To logout
+11:31:00,400  INFO AdminClient,main:29 - 0
+11:31:00,400  INFO SMSApp,main:39 - Enter 1 to login
+11:31:00,400  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:31:00,400  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:31:00,401  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:31:00,401  INFO SMSApp,main:43 - Enter any other number to exit 
+11:31:00,401 ERROR SMSApp,main:223 - For input string: ""
+11:31:00,401  INFO SMSApp,main:39 - Enter 1 to login
+11:31:00,401  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:31:00,401  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:31:00,402  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:31:00,402  INFO SMSApp,main:43 - Enter any other number to exit 
+11:31:01,555  INFO SMSApp,main:156 - Enter username
+11:31:03,690  INFO SMSApp,main:158 - Enter password
+11:31:05,054  INFO SMSApp,main:160 - Select Role: Enter 1 for Student, 2 for Professor, 3 for Admin: 
+11:31:09,569 ERROR SMSApp,main:174 - Login failed!!, please try again
+11:31:09,569  INFO SMSApp,main:176 - Successfully logged in as Student
+11:31:09,571 ERROR StudentDAOImpl,main:278 - Invalid value for getInt() - 'F'
+11:31:09,571  INFO StudentClient,main:72 - Enter your choice:
+11:31:09,571  INFO StudentClient,main:73 - 1. To view available courses
+11:31:09,571  INFO StudentClient,main:74 - 2. To choose a course
+11:31:09,572  INFO StudentClient,main:75 - 3. To drop a course
+11:31:09,572  INFO StudentClient,main:76 - 4. View registered courses
+11:31:09,572  INFO StudentClient,main:77 - 5. Pay fees
+11:31:09,572  INFO StudentClient,main:78 - 6. View grades
+11:31:09,572  INFO StudentClient,main:79 - 0. To logout
+11:31:14,564  INFO SMSApp,main:39 - Enter 1 to login
+11:31:14,564  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:31:14,567  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:31:14,567  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:31:14,567  INFO SMSApp,main:43 - Enter any other number to exit 
+11:31:14,568 ERROR SMSApp,main:223 - For input string: ""
+11:31:14,568  INFO SMSApp,main:39 - Enter 1 to login
+11:31:14,568  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:31:14,568  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:31:14,568  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:31:14,568  INFO SMSApp,main:43 - Enter any other number to exit 
+11:31:17,356  INFO SMSApp,main:156 - Enter username
+11:31:19,223  INFO SMSApp,main:158 - Enter password
+11:31:35,376  INFO SMSApp,main:160 - Select Role: Enter 1 for Student, 2 for Professor, 3 for Admin: 
+11:31:37,046 ERROR SMSApp,main:174 - Login failed!!, please try again
+11:31:37,046  INFO SMSApp,main:176 - Successfully logged in as Student
+11:31:37,047 ERROR StudentDAOImpl,main:278 - Invalid value for getInt() - 'F'
+11:31:37,047  INFO StudentClient,main:72 - Enter your choice:
+11:31:37,047  INFO StudentClient,main:73 - 1. To view available courses
+11:31:37,048  INFO StudentClient,main:74 - 2. To choose a course
+11:31:37,048  INFO StudentClient,main:75 - 3. To drop a course
+11:31:37,048  INFO StudentClient,main:76 - 4. View registered courses
+11:31:37,048  INFO StudentClient,main:77 - 5. Pay fees
+11:31:37,048  INFO StudentClient,main:78 - 6. View grades
+11:31:37,048  INFO StudentClient,main:79 - 0. To logout
+11:34:57,541  INFO SMSApp,main:39 - Enter 1 to login
+11:34:57,542  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:34:57,542  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:34:57,542  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:34:57,542  INFO SMSApp,main:43 - Enter any other number to exit 
+11:34:57,543 ERROR SMSApp,main:223 - For input string: ""
+11:34:57,543  INFO SMSApp,main:39 - Enter 1 to login
+11:34:57,543  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:34:57,543  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:34:57,543  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:34:57,543  INFO SMSApp,main:43 - Enter any other number to exit 
+11:34:59,534 ERROR SMSApp,main:80 - --------------------Exiting--------------------
+11:34:59,534  INFO SMSApp,main:28 - **See you later, Bye**
+11:35:20,922  INFO SMSApp,main:22 - *** Welcome to Student Management System ***
+11:35:20,924  INFO SMSApp,main:39 - Enter 1 to login
+11:35:20,924  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:35:20,924  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:35:20,924  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:35:20,924  INFO SMSApp,main:43 - Enter any other number to exit 
+11:35:25,490  INFO SMSApp,main:91 - Enter student name
+11:35:36,609  INFO SMSApp,main:93 - Enter student's user name
+11:35:40,506  INFO SMSApp,main:95 - Enter password
+11:35:53,115  INFO SMSApp,main:22 - *** Welcome to Student Management System ***
+11:35:53,117  INFO SMSApp,main:39 - Enter 1 to login
+11:35:53,117  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:35:53,117  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:35:53,117  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:35:53,117  INFO SMSApp,main:43 - Enter any other number to exit 
+11:35:56,189  INFO SMSApp,main:91 - Enter student name
+11:35:59,852  INFO SMSApp,main:93 - Enter student's user name
+11:36:06,661  INFO SMSApp,main:95 - Enter password
+11:36:17,962  INFO SMSApp,main:97 - Enter gender: 'm' for male and 'f' for female
+11:36:21,045  INFO SMSApp,main:99 - Enter semester:
+11:36:23,415  INFO SMSApp,main:101 - If you have scholarship enter 1, else enter 0
+11:36:25,305 ERROR AuthenticateDAOImpl,main:179 - Cannot add or update a child row: a foreign key constraint fails (`flipkart`.`user`, CONSTRAINT `roleId` FOREIGN KEY (`roleId`) REFERENCES `SMS`.`Role` (`roleId`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+11:36:25,305  INFO AuthenticateDAOImpl,main:84 - Couldn't register please try again!!
+11:36:25,305  INFO SMSApp,main:39 - Enter 1 to login
+11:36:25,305  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:36:25,306  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:36:25,306  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:36:25,306  INFO SMSApp,main:43 - Enter any other number to exit 
+11:40:31,783  INFO SMSApp,main:91 - Enter student name
+11:40:45,615  INFO SMSApp,main:93 - Enter student's user name
+11:40:47,589  INFO SMSApp,main:95 - Enter password
+11:40:49,223  INFO SMSApp,main:97 - Enter gender: 'm' for male and 'f' for female
+11:40:50,993  INFO SMSApp,main:99 - Enter semester:
+11:40:52,360  INFO SMSApp,main:101 - If you have scholarship enter 1, else enter 0
+11:40:53,863  INFO AuthenticateDAOImpl,main:72 - Successfully registered
+11:40:53,864  INFO SMSApp,main:39 - Enter 1 to login
+11:40:53,864  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:40:53,864  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:40:53,864  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:40:53,864  INFO SMSApp,main:43 - Enter any other number to exit 
+11:41:01,533  INFO SMSApp,main:91 - Enter student name
+11:41:05,556  INFO SMSApp,main:93 - Enter student's user name
+11:41:07,670  INFO SMSApp,main:95 - Enter password
+11:41:12,736  INFO SMSApp,main:97 - Enter gender: 'm' for male and 'f' for female
+11:41:14,561  INFO SMSApp,main:99 - Enter semester:
+11:41:16,112  INFO SMSApp,main:101 - If you have scholarship enter 1, else enter 0
+11:41:18,017  INFO AuthenticateDAOImpl,main:72 - Successfully registered
+11:41:18,017  INFO SMSApp,main:39 - Enter 1 to login
+11:41:18,017  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:41:18,017  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:41:18,017  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:41:18,018  INFO SMSApp,main:43 - Enter any other number to exit 
+11:41:23,321  INFO SMSApp,main:91 - Enter student name
+11:41:28,433  INFO SMSApp,main:93 - Enter student's user name
+11:41:30,360  INFO SMSApp,main:95 - Enter password
+11:41:31,836  INFO SMSApp,main:97 - Enter gender: 'm' for male and 'f' for female
+11:41:33,748  INFO SMSApp,main:99 - Enter semester:
+11:41:35,307  INFO SMSApp,main:101 - If you have scholarship enter 1, else enter 0
+11:41:38,064  INFO AuthenticateDAOImpl,main:72 - Successfully registered
+11:41:38,064  INFO SMSApp,main:39 - Enter 1 to login
+11:41:38,064  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:41:38,064  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:41:38,064  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:41:38,064  INFO SMSApp,main:43 - Enter any other number to exit 
+11:41:42,930  INFO SMSApp,main:91 - Enter student name
+11:41:47,456  INFO SMSApp,main:93 - Enter student's user name
+11:41:50,901  INFO SMSApp,main:95 - Enter password
+11:41:52,401  INFO SMSApp,main:97 - Enter gender: 'm' for male and 'f' for female
+11:41:54,482  INFO SMSApp,main:99 - Enter semester:
+11:41:55,973  INFO SMSApp,main:101 - If you have scholarship enter 1, else enter 0
+11:41:57,952  INFO AuthenticateDAOImpl,main:72 - Successfully registered
+11:41:57,952  INFO SMSApp,main:39 - Enter 1 to login
+11:41:57,953  INFO SMSApp,main:40 - Enter 2  to register as a Student
+11:41:57,953  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+11:41:57,953  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+11:41:57,953  INFO SMSApp,main:43 - Enter any other number to exit 
+11:44:00,769 ERROR SMSApp,main:80 - --------------------Exiting--------------------
+11:44:00,770  INFO SMSApp,main:28 - **See you later, Bye**
+23:26:57,720  INFO SMSApp,main:22 - *** Welcome to Student Management System ***
+23:26:57,723  INFO SMSApp,main:39 - Enter 1 to login
+23:26:57,723  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:26:57,723  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:26:57,724  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:26:57,724  INFO SMSApp,main:43 - Enter any other number to exit 
+23:27:03,332  INFO SMSApp,main:137 - Enter admin username:
+23:27:07,410  INFO SMSApp,main:139 - Enter admin name:
+23:27:10,592  INFO SMSApp,main:141 - Enter password
+23:27:25,545  INFO SMSApp,main:143 - Enter gender: 'm' for male and 'f' for female
+23:27:29,155  INFO AuthenticateDAOImpl,main:133 - Successfully registered
+23:27:29,155  INFO SMSApp,main:39 - Enter 1 to login
+23:27:29,155  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:27:29,155  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:27:29,156  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:27:29,156  INFO SMSApp,main:43 - Enter any other number to exit 
+23:29:50,778  INFO SMSApp,main:118 - Enter professor name:
+23:29:54,669  INFO SMSApp,main:120 - Enter professor username:
+23:30:04,287  INFO SMSApp,main:122 - Enter password
+23:30:10,858  INFO SMSApp,main:124 - Enter gender: 'm' for male and 'f' for female
+23:30:13,217  INFO AuthenticateDAOImpl,main:102 - Successfully registered
+23:30:13,218  INFO SMSApp,main:39 - Enter 1 to login
+23:30:13,218  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:30:13,218  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:30:13,218  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:30:13,218  INFO SMSApp,main:43 - Enter any other number to exit 
+23:30:20,815  INFO SMSApp,main:156 - Enter username
+23:30:27,172  INFO SMSApp,main:158 - Enter password
+23:30:32,395  INFO SMSApp,main:160 - Select Role: Enter 1 for Student, 2 for Professor, 3 for Admin: 
+23:30:40,897 ERROR SMSApp,main:174 - Login failed!!, please try again
+23:30:40,897  INFO SMSApp,main:39 - Enter 1 to login
+23:30:40,898  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:30:40,898  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:30:40,898  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:30:40,898  INFO SMSApp,main:43 - Enter any other number to exit 
+23:30:59,570  INFO SMSApp,main:22 - *** Welcome to Student Management System ***
+23:30:59,572  INFO SMSApp,main:39 - Enter 1 to login
+23:30:59,572  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:30:59,573  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:30:59,573  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:30:59,573  INFO SMSApp,main:43 - Enter any other number to exit 
+23:31:02,882  INFO SMSApp,main:91 - Enter student name
+23:31:08,527  INFO SMSApp,main:93 - Enter student's user name
+23:31:10,983  INFO SMSApp,main:95 - Enter password
+23:31:12,978  INFO SMSApp,main:97 - Enter gender: 'm' for male and 'f' for female
+23:31:16,299  INFO SMSApp,main:99 - Enter semester:
+23:31:18,437  INFO SMSApp,main:101 - If you have scholarship enter 1, else enter 0
+23:31:19,963  INFO AuthenticateDAOImpl,main:72 - Successfully registered
+23:31:19,964  INFO SMSApp,main:39 - Enter 1 to login
+23:31:19,964  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:31:19,964  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:31:19,964  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:31:19,964  INFO SMSApp,main:43 - Enter any other number to exit 
+23:31:28,901  INFO SMSApp,main:156 - Enter username
+23:31:31,492  INFO SMSApp,main:158 - Enter password
+23:31:33,553  INFO SMSApp,main:160 - Select Role: Enter 1 for Student, 2 for Professor, 3 for Admin: 
+23:31:35,839 ERROR SMSApp,main:212 - Login failed!!, please try again
+23:31:35,839  INFO SMSApp,main:39 - Enter 1 to login
+23:31:35,840  INFO SMSApp,main:40 - Enter 2  to register as a Student
+23:31:35,840  INFO SMSApp,main:41 - Enter 3  to register as a Professor
+23:31:35,840  INFO SMSApp,main:42 - Enter 4  to register as a Admin
+23:31:35,840  INFO SMSApp,main:43 - Enter any other number to exit 

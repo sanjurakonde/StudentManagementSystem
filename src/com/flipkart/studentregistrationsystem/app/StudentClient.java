@@ -19,7 +19,9 @@ public class StudentClient {
     CourseService courseService = new CourseServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    // Displays the Student Menu with choices for student
+    /*
+     Displays the Student Menu with choices for student
+     */
     public void displayMenu(Student student) throws CourseNotFoundException {
         int choice;
         do {
@@ -63,7 +65,9 @@ public class StudentClient {
 
     }
 
-    // Show choices
+    /*
+     Show choices
+     */
     void showChoices() {
         logger.info("Enter your choice:");
         logger.info("1. To view available courses");
@@ -75,7 +79,9 @@ public class StudentClient {
         logger.info("0. To logout");
     }
 
-    // Gets course id to add for student
+    /*
+     Gets course id to add for student
+     */
     void chooseCourse() throws CourseNotFoundException {
         if(studentService.numberOfRegisteredCourse(student) >= 4) {
             logger.info("You cannot add courses as you have already selected 4 courses");
@@ -88,7 +94,9 @@ public class StudentClient {
 
     }
 
-    // Gets course id to delete from student's registered courses
+    /*
+     Gets course id to delete from student's registered courses
+     */
     void dropCourse() throws CourseNotFoundException {
         Course course = new Course();
         logger.info("Enter course id:");
@@ -97,7 +105,9 @@ public class StudentClient {
         studentService.dropCourse(courseId, student.getId());
     }
 
-    // print report card for student
+    /*
+     print report card for student
+     */
     void printReportCard() {
         logger.info("--------Report Card--------");
         logger.info("Course\tGrade");
@@ -105,7 +115,9 @@ public class StudentClient {
         logger.info("---------------------------");
     }
 
-    // Get amount to be paid and make payment
+    /*
+     Get amount to be paid and make payment
+     */
     void payFees() {
         int fee = studentService.calculateTotalFee(student);
         logger.info("Want to continue to pay Rs."+ fee + " press 'y' to continue...");

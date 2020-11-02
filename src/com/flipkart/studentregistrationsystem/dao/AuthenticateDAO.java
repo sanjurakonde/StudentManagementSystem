@@ -47,5 +47,5 @@ public interface AuthenticateDAO {
      * @param admin    the admin
      * @param password the password
      */
-    public void registerAdmin(Admin admin, String password);
+    void registerAdmin(Admin admin, String password);
 }

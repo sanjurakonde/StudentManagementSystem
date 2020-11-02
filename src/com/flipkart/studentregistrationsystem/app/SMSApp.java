@@ -162,11 +162,18 @@ public class SMSApp {
             Authenticate authenticate = new AuthenticateImpl();
             try {
                 String roleType = authenticate.logIn(username,password);
-                loggedIn = true;
+
                 //logger.info("Successfully logged in as " + role);
                 //logger.info("Logged in at: " + DateTimeUtil.getDateTime());
                 switch(role) {
                     case 1:
+                        if(roleType == "Student")
+                        {
+                            loggedIn = true;
+                        } else {
+                            logger.error("Login failed!!, please try again");
+                            break;
+                        }
                         logger.info("Successfully logged in as Student");
                         StudentClient studentClient = new StudentClient();
                         StudentService studentService = new StudentServiceImpl();
@@ -179,6 +186,13 @@ public class SMSApp {
                         break;
 
                     case 2:
+                        if(roleType == "Professor")
+                        {
+                            loggedIn = true;
+                        } else {
+                            logger.error("Login failed!!, please try again");
+                            break;
+                        }
                         logger.info("Successfully logged in as Professor");
                         ProfessorClient professorClient = new ProfessorClient();
                         ProfessorService professorService = new ProfessorServiceImpl();
@@ -191,6 +205,13 @@ public class SMSApp {
                         break;
 
                     case 3:
+                        if(roleType == "Admin")
+                        {
+                            loggedIn = true;
+                        } else {
+                            logger.error("Login failed!!, please try again");
+                            break;
+                        }
                         logger.info("Successfully logged in as Admin");
                         AdminClient adminClient = new AdminClient();
                         adminClient.displayMenu();

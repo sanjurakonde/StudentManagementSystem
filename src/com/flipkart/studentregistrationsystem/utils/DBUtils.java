@@ -10,11 +10,19 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+/**
+ * The type Db utils.
+ */
 public class DBUtils {
 
     private static Connection connection = null;
     private static Logger logger = Logger.getLogger(DBUtils.class);
 
+    /**
+     * Gets connection.
+     *
+     * @return the connection
+     */
     public static Connection getConnection() {
 
         if (connection != null)
@@ -43,6 +51,9 @@ public class DBUtils {
         }
     }
 
+    /**
+     * Close connection.
+     */
     public static void closeConnection() {
         logger.info("Closing Connection!!");
         try {

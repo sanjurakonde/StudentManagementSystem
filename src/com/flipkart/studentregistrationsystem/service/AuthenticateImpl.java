@@ -7,8 +7,14 @@ import com.flipkart.studentregistrationsystem.bean.User;
 import com.flipkart.studentregistrationsystem.dao.AuthenticateDAO;
 import com.flipkart.studentregistrationsystem.dao.AuthenticateDAOImpl;
 
+/**
+ * The type Authenticate.
+ */
 public class AuthenticateImpl implements  Authenticate {
 
+    /**
+     * The Authenticate.
+     */
     AuthenticateDAO authenticate = new AuthenticateDAOImpl();
     @Override
     public String logIn(String username, String password) {

@@ -9,8 +9,14 @@ import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 
+/**
+ * The type Student service.
+ */
 public class StudentServiceImpl implements StudentService {
     private static Logger logger = Logger.getLogger(StudentServiceImpl.class);
+    /**
+     * The Student dao.
+     */
     StudentDAO studentDAO = new StudentDAOImpl();
     @Override
     public void viewRegisteredCourses(Student student) {
@@ -66,6 +72,8 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public void makePayment(Student student, int paymentMethod, int fees) {
+        if(fees==0)
+            fees = calculateTotalFee(student);
         logger.info(studentDAO.makePayment(student, paymentMethod, fees));
     }
 

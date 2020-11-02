@@ -6,11 +6,52 @@ import com.flipkart.studentregistrationsystem.bean.User;
 
 import java.util.ArrayList;
 
+/**
+ * The interface Admin service.
+ */
 public interface AdminService {
+    /**
+     * Approve user boolean.
+     *
+     * @param user the user
+     * @return the boolean
+     */
     boolean approveUser(User user);
+
+    /**
+     * Delete user boolean.
+     *
+     * @param userId the user id
+     * @return the boolean
+     */
     boolean deleteUser(int userId);
+
+    /**
+     * Add course boolean.
+     *
+     * @param course the course
+     * @return the boolean
+     */
     boolean addCourse(Course course);
+
+    /**
+     * Delete course boolean.
+     *
+     * @param course the course
+     * @return the boolean
+     */
     boolean deleteCourse(Course course);
+
+    /**
+     * Assign professor.
+     *
+     * @param professor the professor
+     * @param courseId  the course id
+     */
     void assignProfessor(Professor professor, int courseId);
+
+    /**
+     * View users.
+     */
     void viewUsers();
 }

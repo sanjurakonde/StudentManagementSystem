@@ -15,7 +15,9 @@ public class ProfessorClient {
     CourseService courseService = new CourseServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    // Display menu for professor
+    /*
+     Display menu for professor
+     */
     public void displayMenu(Professor professor) {
 
         int choice;
